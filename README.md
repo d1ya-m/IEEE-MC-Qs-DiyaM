@@ -6,7 +6,6 @@ The problems are organised week-wise as provided by the challenge.
 
 ## Repository Structure
 - `WEEK1/` – Solutions for Week 1  
-- `WEEK2/` – Solutions for Week 2  
 - `WEEK3/` – Solutions for Week 3  
 
 ## Problem Source
