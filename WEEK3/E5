@@ -1,0 +1,47 @@
+class Solution {
+public:
+    struct Node {
+        int data;
+        struct Node* next;
+    };
+    int findTheWinner(int n, int k) {
+
+        struct Node* newNode=(struct Node*)malloc(sizeof(Node));
+        struct Node* head=newNode;
+        newNode->data=(1);
+        newNode->next=NULL;
+        int i=2;
+        while(i<=n)
+        {
+            struct Node* newNode2=(struct Node*)malloc(sizeof(Node));
+            newNode2->data=(i);
+            newNode->next=newNode2;
+            newNode2->next=NULL;
+            newNode=newNode->next;
+            i++;
+        }
+        newNode->next=head;
+
+        struct Node* temp=head;
+       
+        while (temp->next != head) {
+            temp = temp->next;   // START FROM BEFORE STARTING NODE
+        }
+
+        while (temp->next!=temp)
+        {
+            for (int j=1; j<k;j++){ 
+                temp=temp->next;
+            }
+            if(head==temp->next)
+            {
+                head=head->next;
+            }
+            temp->next=temp->next->next;
+            
+
+        }
+        return head->data;
+        
+    }
+};
