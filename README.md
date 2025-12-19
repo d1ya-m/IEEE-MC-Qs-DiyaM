@@ -9,6 +9,6 @@ The problems are organised week-wise as provided by the challenge.
 - `WEEK3/` – Solutions for Week 3  
 
 ## Problem Source
-🔗 https://github.com/miikaagl-ieee/IEEE_MC_CODING_2025
+🔗 https://github.com/mihikaagl-ieee/IEEE_MC_CODING_2025
 
 
